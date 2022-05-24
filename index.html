@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugas 1 - SINAU</title>
+        <style>
+            table {
+            width: 30%;
+            }
+            table, td {
+            padding: 5px;
+            }
+            .fontStyle {
+                font-size: 14px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .pointer {
+                cursor: pointer;
+            }
+            .d-flex {
+            display: flex;
+            justify-content: center;
+            }
+            .text-right {
+            text-align: right;
+            }
+            .text-center {
+            text-align: center;
+            }
+            .input, select {
+            padding: 3px 10px 3px 10px;
+            height: 30px;
+            width: 90%;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 5px;
+            }
+            .input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 2px solid rgb(20, 153, 220);
+            box-shadow: 0 0 10px #719ece;
+            }
+            button {
+            padding: 10px 30px;
+            background-color: rgb(20, 153, 220);
+            color: white;
+            border: 0;
+            border-radius: 5px;
+            }
+            button:hover {
+            background-color: rgb(1, 42, 71);
+            cursor: pointer;
+            }
+            textarea {
+            padding: 3px 10px 3px 10px;
+            width: 90%;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="d-flex">
+            <table style="position: absolute; margin-top: 20vh">
+            <tbody>
+                <tr>
+                <td class="text-right fontStyle">Text :</td>
+                <td>
+                    <input type="text" class="input" />
+                </td>
+                </tr>
+                <tr>
+                <td class="text-right fontStyle">Password :</td>
+                <td><input type="password" class="input" /></td>
+                </tr>
+                <tr>
+                <td colspan="2" class="text-center">
+                    <label class="fontStyle" for="radio1">Radio 1</label>
+                    <input value="radio 1" class="pointer" type="radio" id="radio1" name="radioForm" />
+                    <label class="fontStyle" for="radio2">Radio 2</label>
+                    <input value="radio 2" class="pointer" type="radio" id="radio2" name="radioForm" />
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" class="text-center">
+                    <label class="fontStyle" for="ch1">Checkbox 1</label>
+                    <input value="checkbox1" class="pointer" type="checkbox" name="checkboxForm" />
+                    <label class="fontStyle" for="ch2">Checkbox 2</label>
+                    <input value="checkbox2" class="pointer" type="checkbox" name="checkboxForm2" />
+                </td>
+                </tr>
+                <tr>
+                <td class="text-right fontStyle">Combo Box :</td>
+                <td>
+                    <select class="pointer" name="dropdown_option">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                <td class="text-right fontStyle">Text Area :</td>
+                <td>
+                    <textarea name="textfield" rows="3"></textarea>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" class="text-center">
+                    <button>Button</button>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </body>
+</html>
